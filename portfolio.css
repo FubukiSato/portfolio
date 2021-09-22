@@ -49,7 +49,7 @@ nav ul{
     background-color: #EEEEEE;
 }
 
-.profile_content{
+.profile{
     background-color: #ffffff;
 }
 
@@ -67,5 +67,17 @@ nav ul{
 
 .home_content h1 h2{
     font-family: 'Sacramento', cursive;
+}
+
+.title{
+    text-align: center;
+    margin: 0;
+    padding-top: 50px;
+}
+
+.profile_content h1 img{
+    border-radius: 300px;
+    width: 400px;
+    height: 400px;
 }
 
