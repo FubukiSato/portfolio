@@ -1,7 +1,71 @@
+@import url('https://fonts.googleapis.com/css?family=Sacramento');
+
 body{
     margin: 0;
 }
 
-.home_content{
-    background-color: red;
+#home h1 img{
+    border-radius: 30px;
+    width: 50px;
+    height: 50px;
 }
+
+.header_container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    height: 65px;
+    margin: 0 auto;
+}
+
+#gnav{
+    display: flex;
+}
+
+.gnav_list{
+    display: flex;
+    justify-content: space-between;
+    width: 600px;
+}
+
+nav ul{
+    list-style: none;
+}
+
+.gnav_list li{
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+.gnav_list li a{
+    font-size: 20px;
+    color: #BBBBBB;
+    text-decoration: none;
+}
+
+.home{
+    background-color: #EEEEEE;
+}
+
+.profile_content{
+    background-color: #ffffff;
+}
+
+
+.home,.profile_content{
+    display: flex;
+    height: 700px;
+    align-items: center;
+    justify-content: center;
+}
+
+.home_content{
+    text-align: center;
+}
+
+.home_content h1 h2{
+    font-family: 'Sacramento', cursive;
+}
+
