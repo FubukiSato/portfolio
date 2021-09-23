@@ -45,7 +45,7 @@ nav ul{
     text-decoration: none;
 }
 
-.home{
+.home,.skills{
     background-color: #EEEEEE;
 }
 
@@ -55,9 +55,9 @@ nav ul{
 }
 
 
-.home,.profile_content{
+.home,.profile_content,.skill_content{
     display: flex;
-    height: 700px;
+    min-height: 700px;
     align-items: center;
     justify-content: center;
 }
@@ -90,5 +90,24 @@ nav ul{
 .profile_right_content p{
     font-size: 20px;
     padding-left: 40px;
+}
+
+.skill{
+    width: 320px;
+    margin-left: 30px;
+}
+
+.skill_content{
+    width: 70%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.skill_content .skill p .label{
+    border-bottom: red;
+    display: inline-block;
+    width: 7em;
 }
 
