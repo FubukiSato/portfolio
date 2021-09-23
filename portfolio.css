@@ -50,6 +50,7 @@ nav ul{
 }
 
 .profile{
+    color: #666666;
     background-color: #ffffff;
 }
 
@@ -70,6 +71,7 @@ nav ul{
 }
 
 .title{
+    color: #000000;
     text-align: center;
     margin: 0;
     padding-top: 50px;
@@ -77,7 +79,16 @@ nav ul{
 
 .profile_content h1 img{
     border-radius: 300px;
-    width: 400px;
-    height: 400px;
+    width: 350px;
+    height: 350px;
+}
+
+.profile_right_content{
+    padding-left: 40px;
+}
+
+.profile_right_content p{
+    font-size: 20px;
+    padding-left: 40px;
 }
 
