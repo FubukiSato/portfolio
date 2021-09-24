@@ -49,7 +49,7 @@ nav ul{
     background-color: #EEEEEE;
 }
 
-.profile{
+.profile,.products{
     color: #666666;
     background-color: #ffffff;
 }
@@ -83,13 +83,17 @@ nav ul{
     height: 350px;
 }
 
-.profile_right_content{
-    padding-left: 40px;
+.profile_right_content,.product_right_content{
+    padding-left: 80px;
 }
 
 .profile_right_content p{
     font-size: 20px;
-    padding-left: 40px;
+}
+
+.product_right_content p{
+    width: 740px;
+    font-size: 15px;
 }
 
 .skill{
@@ -111,10 +115,16 @@ nav ul{
     width: 7em;
 }
 
+.product{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .product_content h1 img{
     border:2px solid #ccc;
     border-radius: 10px;
-    width: 300px;
-    height: 400px;
+    width: 310px;
+    height: 450px;
 }
 
