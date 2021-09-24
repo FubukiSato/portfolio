@@ -45,7 +45,7 @@ nav ul{
     text-decoration: none;
 }
 
-.home,.skills{
+.home,.skills,.hobbies{
     background-color: #EEEEEE;
 }
 
@@ -55,7 +55,7 @@ nav ul{
 }
 
 
-.home,.profile_content,.skill_content,.product_content{
+.home,.profile_content,.skill_content,.product_content,.hobby_content{
     display: flex;
     min-height: 700px;
     align-items: center;
@@ -115,7 +115,7 @@ nav ul{
     width: 7em;
 }
 
-.product{
+.product,.hobby{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -126,5 +126,12 @@ nav ul{
     border-radius: 10px;
     width: 310px;
     height: 450px;
+}
+
+.hobby h1 img{
+    border:2px solid #ccc;
+    border-radius: 10px;
+    width: 300px;
+    height: 300px;
 }
 
