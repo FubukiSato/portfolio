@@ -1,10 +1,16 @@
 <link rel="stylesheet" href="portfolio.css">
 <link rel="stylesheet" href="stars.css">
 
+
 <!DOCTYPE html>
 <html lang="ja">
   <head>
     <meta charset="UTF-8">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta@0.5.21/dist/vanta.dots.min.js"></script>
+    <script src="https://code.jquery.com/jquery.min.js"></script>
+    <script type="text/javascript" src="background.js"></script>
+    <script type="text/javascript" src="portfolio.js"></script>
   </head>
   <body>
     <header id="home">
@@ -39,7 +45,7 @@
         </div>
     </header>
 
-    <div id="c1" class="home">
+    <div id="c1" id="my-background" class="home">
         <div class="home_content">
             <h1>Welcome to My Portfolio</h1>
             <h2>I'm Fubuki Sato</h2>
@@ -150,7 +156,13 @@
         </div>
     </div>
 
-    <script src="https://code.jquery.com/jquery.min.js"></script>
-    <script type="text/javascript" src="portfolio.js"></script>
+
+    <div id="page-top" class="page-top">
+        <p><a id="move-page-top" class="move-page-top">▲</a></p>
+    </div>
+
+    
+    
+    
   </body>
 </html>

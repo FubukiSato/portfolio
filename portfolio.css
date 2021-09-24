@@ -1,7 +1,11 @@
 @import url('https://fonts.googleapis.com/css?family=Sacramento');
 
-body{
-    margin: 0;
+html,
+body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
 }
 
 #home h1 img{
@@ -135,3 +139,46 @@ nav ul{
     height: 300px;
 }
 
+
+
+
+
+
+.page-top
+{
+	margin: 0 ;
+	padding: 0 ;
+    display: none ;
+}
+ 
+.page-top p
+{
+	margin: 0 ;
+	padding: 0 ;
+
+	position: fixed ;
+	right: 16px ;
+	bottom: 16px ;
+}
+ 
+.move-page-top
+{
+	display: block ;
+	background: #D36015 ;
+	width: 50px ;
+	height: 50px ;
+
+	color: #fff ;
+	line-height: 50px ;
+	text-decoration: none ;
+	text-align: center ;
+
+	-webkit-transition:all 0.3s ;
+	-moz-transition:all 0.3s ;
+	transition:all 0.3s ;
+}
+
+.move-page-top:hover
+{
+	opacity: 0.85 ;
+}

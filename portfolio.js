@@ -1,3 +1,7 @@
+VANTA.DOTS({
+    el: "#my-background"
+  })
+
 $(function(){
     $('a[href^=#]').click(function(){
         var speed = 700;
@@ -8,3 +12,4 @@ $(function(){
         return false;
     });
 });
+
