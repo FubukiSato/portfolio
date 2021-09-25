@@ -1,7 +1,3 @@
-VANTA.DOTS({
-    el: "#my-background"
-  })
-
 $(function(){
     $('a[href^=#]').click(function(){
         var speed = 700;
@@ -11,5 +7,20 @@ $(function(){
         $("html, body").animate({scrollTop:position}, speed, "swing");
         return false;
     });
+
+});
+
+$(function() {
+	$(window).scroll(function(){
+        
+		if ($(window).scrollTop() > 200) {
+			$("#page-top").fadeIn();
+		} else {
+			$("#page-top").fadeOut();
+		}
+	});
+	$("#page-top").click(function () {
+		$("html,body").animate({scrollTop:0}, 200);
+	});
 });
 

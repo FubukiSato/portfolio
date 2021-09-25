@@ -8,6 +8,55 @@ body {
   padding: 0;
 }
 
+
+.bg {
+    animation:slide 3s ease-in-out infinite alternate;
+    background-image: linear-gradient(-60deg, #6c3 50%, #09f 50%);
+    bottom:0;
+    left:-50%;
+    opacity:.5;
+    position:absolute;
+    right:-50%;
+    top: 65px;
+    display: block;
+    height: 700px;
+  }
+  
+  .bg2 {
+    animation-direction:alternate-reverse;
+    animation-duration:4s;
+  }
+  
+  .bg3 {
+    animation-duration:5s;
+  }
+  
+  .content {
+    background-color:rgba(255,255,255,.8);
+    border-radius:.25em;
+    box-shadow:0 0 .25em rgba(0,0,0,.25);
+    box-sizing:border-box;
+    left:50%;
+    padding:10vmin;
+    position:absolute;
+    text-align:center;
+    top:50%;
+    transform:translate(-50%, -50%);
+  }
+  
+  .content h1 {
+    font-family:monospace;
+  }
+  
+  @keyframes slide {
+    0% {
+      transform:translateX(-25%);
+    }
+    100% {
+      transform:translateX(25%);
+    }
+  }
+
 #home h1 img{
     border-radius: 30px;
     width: 50px;
@@ -49,7 +98,9 @@ nav ul{
     text-decoration: none;
 }
 
-.home,.skills,.hobbies{
+
+
+.skills,.hobbies{
     background-color: #EEEEEE;
 }
 
@@ -144,41 +195,48 @@ nav ul{
 
 
 
-.page-top
-{
-	margin: 0 ;
-	padding: 0 ;
-    display: none ;
-}
- 
-.page-top p
-{
-	margin: 0 ;
-	padding: 0 ;
-
-	position: fixed ;
-	right: 16px ;
-	bottom: 16px ;
-}
- 
-.move-page-top
-{
-	display: block ;
-	background: #D36015 ;
-	width: 50px ;
-	height: 50px ;
-
-	color: #fff ;
-	line-height: 50px ;
-	text-decoration: none ;
-	text-align: center ;
-
-	-webkit-transition:all 0.3s ;
-	-moz-transition:all 0.3s ;
-	transition:all 0.3s ;
+#page-top {
+	width:		64px;
+	height:		64px;
+	right:		20px; 
+	bottom:		20px; 
+	border:		1px solid rgba(0,0,0,0.4);
+	box-shadow:	1px 1px 1px #ccc;
+	border-radius:	50%;
+	background-color:rgba(0,0,0,0.4);
+	display:	none; 
+	position:	fixed;
+    opacity: 0.6; 
 }
 
-.move-page-top:hover
-{
-	opacity: 0.85 ;
+#page-top:hover{
+    opacity: 1.0;
+    transition: 1.0s ;
 }
+
+#page-top:after {
+	content:	"";
+	width:		20px;
+	height:		20px;
+	top:		20px;
+	left:		18px;
+	transform:	rotate(-45deg);
+	position:	absolute;
+}
+
+#page-top:after {
+	border-top:	8px solid #fff;
+	border-right:	8px solid #fff;
+}
+
+#page-top:before {
+	content:	"";
+	width:		32px;
+	height:		32px;
+	top:		18px;
+	left:		28px;
+	position:	absolute;
+	border-left:	8px solid #fff;
+}
+
+
