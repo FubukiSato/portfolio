@@ -1,0 +1,43 @@
+#page-top {
+	width:		64px;
+	height:		64px;
+	right:		20px; 
+	bottom:		20px; 
+	border:		1px solid rgba(0,0,0,0.4);
+	box-shadow:	1px 1px 1px #ccc;
+	border-radius:	50%;
+	background-color:rgba(0,0,0,0.4);
+	display:	none; 
+	position:	fixed;
+    opacity: 0.6; 
+}
+
+#page-top:hover{
+    opacity: 1.0;
+    transition: 1.0s ;
+}
+
+#page-top:after {
+	content:	"";
+	width:		20px;
+	height:		20px;
+	top:		20px;
+	left:		18px;
+	transform:	rotate(-45deg);
+	position:	absolute;
+}
+
+#page-top:after {
+	border-top:	8px solid #fff;
+	border-right:	8px solid #fff;
+}
+
+#page-top:before {
+	content:	"";
+	width:		32px;
+	height:		32px;
+	top:		18px;
+	left:		28px;
+	position:	absolute;
+	border-left:	8px solid #fff;
+}
