@@ -3,33 +3,34 @@
 html,
 body {
   height: 100%;
-  width: 100%;
   margin: 0;
   padding: 0;
 }
 
 
-.bg {
-    animation:slide 3s ease-in-out infinite alternate;
-    background-image: linear-gradient(-60deg, #6c3 50%, #09f 50%);
-    bottom:0;
-    left:-50%;
-    opacity:.5;
-    position:absolute;
-    right:-50%;
-    top: 65px;
-    display: block;
-    height: 700px;
-  }
-  
-  .bg2 {
-    animation-direction:alternate-reverse;
-    animation-duration:4s;
-  }
-  
-  .bg3 {
-    animation-duration:5s;
-  }
+.home{
+    width: 100%;
+	background-color: #ff4500;
+	animation: change-color-anim 50s linear infinite;
+}
+
+@keyframes change-color-anim {
+	0%,100%{
+		background-color: #0dcbe4;
+	}
+	20%{
+		background-color: #7fff00;
+	}
+	40%{
+		background-color: #0091EA;
+ }
+	60%{
+		background-color: #0bdba7;
+	}
+	80%{
+		background-color: #ff69b4;
+	}
+}
   
   .content {
     background-color:rgba(255,255,255,.8);
@@ -117,12 +118,8 @@ nav ul{
     justify-content: center;
 }
 
-.home_content{
-    text-align: center;
-}
-
-.home_content h1 h2{
-    font-family: 'Sacramento', cursive;
+.home{
+    height: 100vh;
 }
 
 .title{
