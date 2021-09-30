@@ -62,12 +62,13 @@ nav ul{
 }
 
 
-.home,.profile_content,.timeline_contents,.skill_content,.product_content,.hobby_content{
+.home,.profile_content,.timeline_contents,.skill_content,.product_content{
     display: flex;
     min-height: 700px;
     align-items: center;
     justify-content: center;
 }
+
 
 .home{
     height: 100vh;
@@ -118,7 +119,7 @@ nav ul{
     width: 7em;
 }
 
-.product,.hobby{
+.product{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -131,7 +132,21 @@ nav ul{
     height: 450px;
 }
 
-.hobby h1 img{
+.hobbies .title{
+    padding-bottom: 80px;
+}
+
+.hobby{
+    max-width: 304px;
+}
+
+.hobby_content{
+    display: flex;
+    min-height: 700px;
+    justify-content: space-around;
+}
+
+.hobby img{
     border:2px solid #ccc;
     border-radius: 10px;
     width: 300px;

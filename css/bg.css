@@ -1,7 +1,7 @@
 .home{
     width: 100%;
 	background-color: #ff4500;
-	animation: change-color-anim 50s linear infinite;
+	animation: change-color-anim 30s linear infinite;
 }
 
 @keyframes change-color-anim {
