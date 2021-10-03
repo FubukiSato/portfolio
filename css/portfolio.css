@@ -111,6 +111,7 @@ nav ul{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+    padding-bottom: 50px;
 }
 
 .skill_content .skill p .label{
